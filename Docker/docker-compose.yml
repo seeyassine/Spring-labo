@@ -6,7 +6,7 @@ services:
     volumes:
       - /opt/data:/var/lib/mysql  # Volume pour la persistance des données
     environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'  # Autoriser un mot de passe vide
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'  # Autoriser un mot de passe vide  //
     ports:
       - '3306:3306'  # Exposer le port
     expose:
