@@ -1,0 +1,33 @@
+#services:
+ # labe_discovry_service:
+  #  build: ./descovry-service
+   # container_name: labe_discovery_service
+    #ports:
+     # - '8761:8761'
+    #expose:
+     # - '8761'
+    #healthcheck:
+     # test: ["CMD","curl","http://localhost:8761/actuator/health"]
+      #interval: 10s
+      #retries: 5
+    #networks:
+     # default:
+      #  ipv4_address: 192.168.100.10
+#networks:
+ # default:
+  #  driver: bridge
+   # ipam:
+    #  config:
+     #   - subnet: 192.168.100.0/24
+
+#labe_config_service:
+ # build: ./Configuration-Service
+  #container_name: labo_config_service
+  #ports:
+   # - '9999:9999'
+  #expose:
+   # - '9999'
+
+
+    #docker compose up -d --build --> pour reconstruire limage
+
