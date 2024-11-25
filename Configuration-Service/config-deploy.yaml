@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: config-service
-          image: labo_config_images
-          imagePullPolicy: Never
+          image: seeyassine/configuration-service:latest
+          #imagePullPolicy: Never
           ports:
             - containerPort: 9999
           env:

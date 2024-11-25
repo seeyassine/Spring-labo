@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: gateway-service
-          image: labo_gateway_images
-          imagePullPolicy: Never
+          image: seeyassine/getway-service:latest
+         # imagePullPolicy: Never
           ports:
             - containerPort: 8888
           env:
