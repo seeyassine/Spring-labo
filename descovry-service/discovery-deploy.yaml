@@ -14,8 +14,7 @@ spec:
     spec:
       containers:
         - name: discovery-service
-          image: labo_discovery_images
-          imagePullPolicy: Never
+          image: seeyassine/descovry-service:latest
           ports:
             - containerPort: 8761
           readinessProbe:
