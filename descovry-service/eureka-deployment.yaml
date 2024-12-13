@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: eureka-service
-          image: yourusername/eureka-service:1.0
+          image: seeyassine/eureka-service:1.0
           ports:
             - containerPort: 8761
