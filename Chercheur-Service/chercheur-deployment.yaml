@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chercheur-service
+  labels:
+    app: chercheur-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chercheur-service
+  template:
+    metadata:
+      labels:
+        app: chercheur-service
+    spec:
+      containers:
+        - name: chercheur-service
+          image: seeyassine/chercheur-service:2.0
+          ports:
+            - containerPort: 8082
+          env:
+            - name: EUREKA_SERVER_URL
+              value: http://eureka-service:8761/eureka/
